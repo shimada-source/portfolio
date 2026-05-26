@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="島田 夏織のプロフィール｜Web Designer & Frontend Developer">
+  <title>Shimada Portfolio</title>
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- OGP -->
+  <meta property="og:title" content="Shimada Portfolio">
+  <meta property="og:description" content="デザインからコーディングまで一貫して手がける、しまだかおりのポートフォリオです。">
+  <meta property="og:image" content="https://shimada-source.github.io/portfolio/assets/images/ogp-image.png">
+  <meta property="og:url" content="https://shimada-source.github.io/portfolio/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shimada Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- web font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Outfit:wght@300;400;500;600&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+</head>
+<body>
+ 
+  <!-- NAV -->
+  <nav>
+    <a href="#" class="nav-logo">Shimada</a>
+    <button class="hamburger" aria-label="メニューを開く">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+    <ul>
+      <li><a href="#works">Works</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+ 
+  <!-- HERO -->
+  <section class="hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+    <div class="sunflower-deco sf-1">
+      <img src="assets/images/sunflower-deco.svg" alt="">
+    </div>
+    <div class="sunflower-deco sf-2">
+      <img src="assets/images/sunflower-deco.svg" alt="">
+    </div>
+    <div class="hero-inner">
+      <div class="hero-greeting">Hello!</div>
+      <h1 class="hero-name">
+        <span class="highlight">しまだ かおり</span>の<br>
+        ポートフォリオ
+      </h1>
+      <p class="hero-title">Web Designer &amp; <br class="brSp">
+        Frontend Developer</p>
+      <p class="hero-message">
+        「見た目」と「使いやすさ」の両方を大切に、<br>
+        デザインからコーディングまで一貫して手がけます。
+      </p>
+      <a href="#works" class="hero-cta">
+        作品を見る
+        <img src="assets/images/arrow-top-right-white.svg" alt="">
+      </a>
+    </div>
+  </section>
+ 
+  <!-- MARQUEE -->
+  <div class="marquee-wrap">
+    <div class="marquee-track">
+       <span class="marquee-item">Web Design</span>
+        <span class="marquee-item">Coding</span>
+        <span class="marquee-item marquee-catch">Design with "Why."</span>
+        <span class="marquee-item">Responsive</span>
+        <span class="marquee-item">UI Design</span>
+        <span class="marquee-item">Branding</span>
+        <!-- 2周目（ループ用に同じ内容を繰り返す） -->
+        <span class="marquee-item">Web Design</span>
+        <span class="marquee-item">Coding</span>
+        <span class="marquee-item marquee-catch">Design with "Why."</span>
+        <span class="marquee-item">Responsive</span>
+        <span class="marquee-item">UI Design</span>
+        <span class="marquee-item">Branding</span>
+    </div>
+  </div>
+ 
+  <!-- WORKS -->
+  <section id="works">
+    <div class="section-label reveal">Works</div>
+    <h2 class="section-heading reveal">制作実績</h2>
+    <p class="section-sub reveal">
+      デザインからコーディングまで、一つひとつ丁寧に取り組んだ作品たちです。
+    </p>
+ 
+    <div class="works-grid" data-stagger>
+      <!-- Featured -->
+      <div class="work-card featured reveal">
+        <div class="work-thumb">
+          <a class="work-img" href="work-tea.html"><img src="assets/images/AmberTea.png" alt="紅茶ECサイト Amber Teaのスクリーンショット"></a>
+        </div>
+        <div class="work-body">
+          <div class="work-type">
+            <span class="type-plan">Planning</span>
+            <span class="type-design">Design</span>
+            <span class="type-dev">Development</span>
+          </div>
+          <div class="work-title">紅茶ECサイト（架空）</div>
+          <div class="work-title-en">Online Tea Shop — Personal Project</div>
+          <p class="work-summary">
+            架空の紅茶ブランドを想定し、ターゲット設定・サイト設計・デザイン・実装まで一貫して制作。
+            上品でシンプルなデザインを追求し、忙しい日常でも直感的に操作できる、わかりやすい画面構成を目指しました。
+          </p>
+          <div class="work-process">
+            <div class="work-process-label">制作プロセス</div>
+            <div class="process-steps">
+              <span class="process-step">企画・設計</span>
+              <span class="process-arrow">→</span>
+              <span class="process-step">ワイヤー</span>
+              <span class="process-arrow">→</span>
+              <span class="process-step">デザイン</span>
+              <span class="process-arrow">→</span>
+              <span class="process-step">実装</span>
+            </div>
+          </div>
+          <div class="work-tags-row">
+            <span class="tag-pill">Photoshop</span>
+            <span class="tag-pill">Figma</span>
+            <span class="tag-pill">HTML/CSS</span>
+            <span class="tag-pill">JavaScript</span>
+          </div>
+          <a href="work-tea.html" class="work-link">くわしく見る →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-compact">
+      <div class="about-compact-photo reveal">
+        <div class="about-photo-sm">
+          <img src="assets/images/me.JPG" alt="島田 夏織のプロフィール写真">
+        </div>
+      </div>
+ 
+      <div class="about-compact-body">
+        <div class="section-label reveal">About</div>
+        <div class="catchphrase reveal">
+          <div class="catchphrase-en">Design with "Why."</div>
+          <h2 class="catchphrase-ja">全部に、理由がある。</h2>
+        </div>
+        <p class="catchphrase-body">
+          なぜこの色か、なぜこの配置か。一つひとつに理由を持っていたい性格です。<br>
+          自分の中に芯を持って、コツコツ積み上げるものづくりが好きです。
+        </p>
+ 
+        <!-- スキル簡易チップ -->
+        <div class="skill-chips reveal" data-stagger>
+          <div class="skill-chip reveal">
+            <span class="chip-icon">⌨</span>
+            <div class="chip-text">
+              <span class="chip-label">Coding</span>
+              <span class="chip-detail">HTML / CSS / JavaScript / WordPress</span>
+            </div>
+          </div>
+          <div class="skill-chip reveal">
+            <span class="chip-icon">🎨</span>
+            <div class="chip-text">
+              <span class="chip-label">Design</span>
+              <span class="chip-detail">Figma / Illustrator / Photoshop</span>
+            </div>
+          </div>
+          <div class="skill-chip reveal">
+            <span class="chip-icon">✨</span>
+            <div class="chip-text">
+              <span class="chip-label">Other</span>
+              <span class="chip-detail">レスポンシブ / Git / Java ほか</span>
+            </div>
+          </div>
+        </div>
+ 
+        <a href="about.html" class="about-more reveal">
+          くわしいプロフィールを見る
+          <img src="assets/images/arrow-top-right-white.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- CONTACT -->
+  <section id="contact" class="contact-area">
+    <div class="blob"></div>
+    <div class="contact-inner">
+      <div class="contact-emoji reveal">✉️</div>
+      <h2 class="reveal">お気軽にご連絡ください</h2>
+      <p class="reveal">
+        お仕事のご相談・ご質問など、いつでもお待ちしています。<br>
+        通常3営業日以内にお返事します。
+      </p>
+      <div class="contact-buttons reveal">
+        <a href="contact.html" class="c-btn primary">
+          お問い合わせ
+        </a>
+        <a href="https://github.com/shimada-source" target="_blank" rel="noopener" class="c-btn outline">
+          🐈
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+ 
+  <!-- FOOTER -->
+  <footer>
+    <div class="f-logo">Shimada</div>
+    <div>&copy; 2026 Shimada. All Rights Reserved.</div>
+  </footer>
+ 
+  <a class="badge" href="#">Top</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
+ 

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="お問い合わせ｜Shimada Portfolio">
+  <title>Contact — Shimada Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <!-- OGP -->
+  <meta property="og:title" content="Contact — Shimada Portfolio">
+  <meta property="og:description" content="お仕事のご相談・ご質問など、お気軽にお問い合わせください。">
+  <meta property="og:image" content="https://shimada-source.github.io/portfolio/assets/images/ogp-image.png">
+  <meta property="og:url" content="https://shimada-source.github.io/portfolio/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shimada Portfolio">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Web Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Outfit:wght@300;400;500;600&family=Zen+Maru+Gothic:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav>
+    <a href="index.html" class="nav-logo">Shimada</a>
+    <button class="hamburger" aria-label="メニューを開く">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul>
+      <li><a href="index.html#works">Works</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" class="is-active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- ========== PAGE HERO ========== -->
+  <section class="page-hero">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="sunflower-deco sf-1">
+      <img src="assets/images/sunflower-deco.svg" alt="">
+    </div>
+    <div class="page-hero-inner">
+      <div class="section-label">Contact</div>
+      <h1 class="page-hero-title">お問い合わせ</h1>
+      <p class="page-hero-sub">
+        お仕事のご相談・ご質問など、お気軽にお問い合わせください。<br>
+        通常3営業日以内にお返事します。
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT FORM ========== -->
+  <div class="contact-form-section">
+    <div class="contact-form-wrap">
+
+      <!-- ★ Formspreeの設定方法は下に記載 -->
+      <form
+        action="https://formspree.io/f/mpqnyoag"
+        method="POST"
+        class="contact-form"
+      >
+        <!-- お名前 -->
+        <div class="form-group reveal">
+          <label for="name">
+            お名前
+            <span class="required">必須</span>
+          </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="例：山田 太郎"
+            required
+            autocomplete="name"
+          >
+        </div>
+
+        <!-- メールアドレス -->
+        <div class="form-group reveal">
+          <label for="email">
+            メールアドレス
+            <span class="required">必須</span>
+          </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="例：example@mail.com"
+            required
+            autocomplete="email"
+          >
+        </div>
+
+        <!-- 件名 -->
+        <div class="form-group reveal">
+          <label for="subject">
+            件名
+            <span class="required">必須</span>
+          </label>
+          <select id="subject" name="subject" required>
+            <option value="" disabled selected>選択してください</option>
+            <option value="お仕事のご相談">お仕事のご相談</option>
+            <option value="採用に関するお問い合わせ">採用に関するお問い合わせ</option>
+            <option value="ご質問">ご質問</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+
+        <!-- お問い合わせ内容 -->
+        <div class="form-group reveal">
+          <label for="message">
+            お問い合わせ内容
+            <span class="required">必須</span>
+          </label>
+          <textarea
+            id="message"
+            name="message"
+            rows="8"
+            placeholder="お気軽にお書きください"
+            required
+          ></textarea>
+        </div>
+
+        <!-- 送信ボタン -->
+        <div class="form-submit reveal">
+          <button type="submit" class="submit-btn">
+            送信する
+            <img src="assets/images/send-white.svg" alt="">
+          </button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+
+  <!-- ========== FOOTER ========== -->
+  <footer>
+    <div class="f-logo">Shimada</div>
+    <div>&copy; 2026 Shimada. All Rights Reserved.</div>
+  </footer>
+
+  <a class="badge" href="#">Top</a>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
