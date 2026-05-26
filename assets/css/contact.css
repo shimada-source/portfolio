@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/* ===========================
+   PAGE HERO (CONTACT)
+   =========================== */
+.page-hero {
+  padding: 160px 64px 80px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.page-hero .blob-1 {
+  width: 400px;
+  height: 400px;
+  background: var(--lemon);
+  top: -80px;
+  right: -60px;
+  animation: blobFloat1 12s ease-in-out infinite;
+  opacity: 0.3;
+}
+
+.page-hero .blob-2 {
+  width: 250px;
+  height: 250px;
+  background: var(--yellow);
+  bottom: -40px;
+  left: -30px;
+  opacity: 0.1;
+  animation: blobFloat2 10s ease-in-out infinite;
+}
+
+.page-hero .sunflower-deco.sf-1 {
+  top: 20%;
+  right: 10%;
+  transform: rotate(15deg);
+  opacity: 0.1;
+}
+
+.page-hero-inner {
+  position: relative;
+  z-index: 1;
+}
+
+.page-hero-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.page-hero-sub {
+  font-size: 1.4rem;
+  color: var(--brown-light);
+  line-height: 2;
+}
+
+/* ===========================
+   CONTACT FORM
+   =========================== */
+.contact-form-section {
+  padding: 40px 64px 100px;
+}
+
+.contact-form-wrap {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* フォームグループ */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* 必須バッジ */
+.required {
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--yellow);
+  padding: 2px 8px;
+  border-radius: 10px;
+  letter-spacing: 0.05em;
+}
+
+/* 入力フィールド共通 */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1.4rem;
+  color: var(--text);
+  background: var(--card);
+  border: 2px solid var(--lemon);
+  border-radius: 12px;
+  padding: 14px 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  outline: none;
+  width: 100%;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--brown-light);
+  opacity: 0.5;
+}
+
+/* フォーカス時 */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--yellow);
+  box-shadow: 0 0 0 4px rgba(232, 185, 35, 0.15);
+}
+
+/* セレクトボックス */
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%238A7458' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  padding-right: 44px;
+  cursor: pointer;
+}
+
+/* テキストエリア */
+.form-group textarea {
+  resize: vertical;
+  min-height: 160px;
+  line-height: 1.8;
+}
+
+/* 送信ボタン */
+.form-submit {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--yellow);
+  color: #fff;
+  border: none;
+  padding: 16px 48px;
+  border-radius: 50px;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(232, 185, 35, 0.25);
+}
+
+.submit-btn:hover {
+  background: var(--yellow-deep);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(232, 185, 35, 0.35);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.submit-btn img {
+  width: 18px;
+  height: 18px;
+  transition: transform 0.3s;
+}
+
+.submit-btn:hover img {
+  transform: translateX(3px) translateY(-3px);
+}
+/* サブリンク */
+.contact-sub {
+  text-align: center;
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px dashed var(--lemon-mid);
+}
+
+.contact-sub p {
+  font-size: 1.2rem;
+  color: var(--brown-light);
+  margin-bottom: 8px;
+}
+
+.contact-mail-link {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.2rem;
+  color: var(--yellow);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.contact-mail-link:hover {
+  border-bottom-color: var(--yellow);
+}
+
+/* ===========================
+   RESPONSIVE
+   =========================== */
+@media screen and (max-width: 780px) {
+  .page-hero {
+    padding: 120px 24px 60px;
+  }
+
+  .page-hero-title {
+    font-size: 2.4rem;
+  }
+
+  .page-hero-sub {
+    font-size: 1.2rem;
+  }
+
+  .contact-form-section {
+    padding: 32px 24px 72px;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1.6rem;         /* スマホでは少し大きく（ズーム防止） */
+  }
+}
