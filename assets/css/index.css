@@ -288,6 +288,8 @@ section { padding: 80px 64px; position: relative; }
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
 .work-card {
@@ -318,7 +320,9 @@ section { padding: 80px 64px; position: relative; }
   overflow: hidden;
 }
 
-.work-card.featured .work-thumb { aspect-ratio: auto; min-height: 320px; }
+.work-card.featured .work-thumb { 
+  aspect-ratio: auto; min-height: 320px; 
+}
 
 .work-thumb .work-img {
   width: 75%;
@@ -417,13 +421,70 @@ section { padding: 80px 64px; position: relative; }
 
 .work-link:hover { gap: 14px; }
 
+/* sub */
+.subWork {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 36px 20px;
+}
+
+.work-card.sub {
+  background: var(--card);
+  display: block;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  border: 1px solid rgba(232, 185, 35, 0.1);
+  max-width: 350px;
+  grid-template-columns: 1.2fr 1fr;
+
+}
+
+.sub-thumb {
+  aspect-ratio: auto;
+  background: linear-gradient(135deg, var(--lemon) 0%, var(--cream) 100%);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+}
+
+.work-card.sub .sub-thumb { 
+  aspect-ratio: auto; 
+  min-height: 220px; 
+}
+
+.sub-thumb .sub-img {
+  width: 75%;
+  display: block;
+  text-decoration: none;
+  transition: transform 0.4s ease;
+}
+
+.sub-img {
+  display: block;
+  text-decoration: none;
+  transition: transform 0.4s ease;
+}
+
+.sub-thumb .sub-img img {
+  object-fit: contain;
+  width: 100%;
+  max-height: 20vw;
+  border-radius: 20px;
+}
+
 @media screen and (max-width: 780px) {
   .works-grid {
     grid-template-columns: 1fr;
   }
 
   .work-card.featured { 
-    grid-column: auto; grid-template-columns: 1fr; 
+    grid-column: auto; 
+    grid-template-columns: 1fr; 
   }
 
   .work-thumb .work-img {
@@ -441,6 +502,20 @@ section { padding: 80px 64px; position: relative; }
 
   .work-title {
     font-size: 1.4rem;
+  }
+
+  .work-card.sub {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .sub-thumb .sub-img img {
+    object-fit: contain;
+    width: 100%;
+    height: 50vw;
+    max-height: none;
+    border-radius: 10px;
   }
 }
 
