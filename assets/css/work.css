@@ -89,6 +89,28 @@
   justify-content: center;
   gap: 12px;
 }
+
+.insta-keyvisual-frame {
+  max-width: 960px;
+  margin: 0 auto;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.insta-keyvisual-placeholder {
+  aspect-ratio: 1 / 1;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+
+.tsunoshima-img {
+  margin: 0 auto;
+}
  
 /* ===========================
    OVERVIEW（課題・解決・成果）
