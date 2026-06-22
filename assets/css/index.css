@@ -15,41 +15,52 @@
 }
 
 .hero .blob-1 {
-  width: 500px; 
-  height: 500px;
+  width: 360px;
+  height: 360px;
   background: var(--lemon);
-  top: -100px; right: -80px;
-  animation: blobFloat1 12s ease-in-out infinite;
+  top: -80px;
+  right: -80px;
+  opacity: 0.28;
 }
 
 .hero .blob-2 {
-  width: 350px; height: 350px;
+  width: 260px;
+  height: 260px;
   background: var(--lemon-mid);
-  bottom: -60px; left: -50px;
-  opacity: 0.35;
-  animation: blobFloat2 10s ease-in-out infinite;
+  bottom: -40px;
+  left: -40px;
+  opacity: 0.22;
 }
 
 .hero .blob-3 {
-  width: 200px; height: 200px;
-  background: var(--green);
-  top: 30%; left: 10%;
-  opacity: 0.08;
-  animation: blobFloat1 14s ease-in-out infinite reverse;
+  display: none;
 }
 
 .sunflower-deco {
   position: absolute;
-  width: 200px;
-  height: 200px;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.12;
 }
 
-.sunflower-deco img { width: 100%; height: 100%; }
-.hero .sunflower-deco.sf-1 { top: 15%; right: 8%; transform: rotate(15deg); opacity: 0.1; }
-.hero .sunflower-deco.sf-2 { bottom: 18%; left: 5%; width: 150px; height: 150px; transform: rotate(-20deg); opacity: 0.08; }
+.sunflower-deco img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero .sunflower-deco.sf-1 {
+  width: 240px;
+  left: 72px;
+  bottom: 200px;
+  opacity: 0.6;
+}
+
+.hero .sunflower-deco.sf-2 {
+  width: 140px;
+  right: 96px;
+  bottom: 70px;
+  opacity: 0.5;
+}
 
 .hero-inner { position: relative; z-index: 1; }
 
@@ -140,9 +151,15 @@
     height: 100px;
   }
 
-  .sunflower-deco.sf-2 {
-    width: 70px;
-    height: 70px;
+  .hero .sunflower-deco.sf-1 {
+    width: 115px;
+    left: -20px;
+    bottom: 16px;
+    opacity: 0.3;
+  }
+
+  .hero .sunflower-deco.sf-2 {
+    display: none;
   }
 
   .hero-greeting  {
@@ -172,9 +189,11 @@
    =========================== */
 .marquee-wrap {
   overflow: hidden;
-  padding: 20px 0;
-  background: var(--lemon);
-  margin: 0 0 40px;
+  padding: 14px 0;
+  background: rgba(243, 216, 107, 0.45);
+  margin: 0 0 56px;
+  border-top: 1px solid rgba(185, 133, 18, 0.12);
+  border-bottom: 1px solid rgba(185, 133, 18, 0.12);
 }
 
 .marquee-track {
@@ -286,7 +305,7 @@ section { padding: 80px 64px; position: relative; }
    =========================== */
 .works-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 32px;
   max-width: 1440px;
   margin: 0 auto;
@@ -313,7 +332,7 @@ section { padding: 80px 64px; position: relative; }
 
 .work-thumb {
   aspect-ratio: 16 / 10;
-  background: linear-gradient(135deg, var(--lemon) 0%, var(--cream) 100%);
+  background: linear-gradient(135deg, rgba(243, 216, 107, 0.35) 0%, var(--cream) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -335,7 +354,7 @@ section { padding: 80px 64px; position: relative; }
   width: 100%;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 0 8px 32px rgba(91, 70, 50, 0.1);
 }
 
@@ -434,18 +453,22 @@ section { padding: 80px 64px; position: relative; }
 .work-card.sub {
   background: var(--card);
   display: block;
-  border-radius: 20px;
   overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-  border: 1px solid rgba(232, 185, 35, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
   max-width: 350px;
   grid-template-columns: 1.2fr 1fr;
+}
 
+.work-card,
+.work-card.sub {
+  border-radius: 16px;
+  border: 1px solid rgba(74, 56, 40, 0.08);
+  box-shadow: 0 10px 32px rgba(74, 56, 40, 0.06);
 }
 
 .sub-thumb {
   aspect-ratio: auto;
-  background: linear-gradient(135deg, var(--lemon) 0%, var(--cream) 100%);
+  background: linear-gradient(135deg, rgba(243, 216, 107, 0.35) 0%, var(--cream) 100%);
   align-items: center;
   justify-content: center;
   display: flex;
@@ -474,7 +497,7 @@ section { padding: 80px 64px; position: relative; }
   object-fit: contain;
   width: 100%;
   max-height: 20vw;
-  border-radius: 20px;
+  border-radius: 5px;
 }
 
 @media screen and (max-width: 780px) {
@@ -524,7 +547,7 @@ section { padding: 80px 64px; position: relative; }
    =========================== */
 #about {
   background: var(--warm-white);
-  border-radius: 40px;
+  border-radius: 24px;
   margin: 0 32px 64px;
 }
 
@@ -592,7 +615,7 @@ section { padding: 80px 64px; position: relative; }
   align-items: center;
   gap: 12px;
   background: var(--card);
-  border: 1px solid rgba(232, 185, 35, 0.12);
+  border: 2px solid rgba(232, 185, 35, 0.12);
   border-radius: 16px;
   padding: 14px 20px;
   flex: 1;
