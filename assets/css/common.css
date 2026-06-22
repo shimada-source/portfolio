@@ -4,22 +4,23 @@
 common
 ===================================== */
 :root {
-  --cream: #fff9da;
-  --warm-white: #fffae9;
-  --lemon: #F6D85E;
-  --lemon-mid: #F4C842;
-  --yellow: #E8B923;
-  --yellow-deep: #D99A1E;
-  --brown: #4b3c2d;
-  --brown-light: #8A7458;
-  --text: #3F3122;
-  --text-light: #7A6A55;
-  --card: #FFFEF8;
-  --shadow: rgba(91, 70, 50, 0.08); 
-  --green: #abdb83;
-  --green-light: #EEF6EA;
-  --green-text: #5A8E50;
+  --cream: #FAF7EF;
+  --warm-white: #FFF9F0;
+  --card: #FFFFFF;
+  --lemon: #F3D86B;
+  --lemon-mid: #E5C24A;
+  --yellow: #D9A91E;
+  --yellow-deep: #B98512;
+  --brown: #5A4635;
+  --brown-light: #8A7661;
+  --text: #33291F;
+  --text-light: #6F6457;
+  --shadow: rgba(74, 56, 40, 0.10);
+  --green: #BCC59B;
+  --green-light: #F4F5E9;
+  --green-text: #727C58;
 }
+
 /* リセットCSS */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 /* スムーススクロール */
